@@ -17,11 +17,18 @@ struct NameView: View {
         Form {
             Section {
                 TextField("Name", text: $name)
+                    .disableAutocorrection(true)
             }
             
             Section {
                 Button("Generate") {
-                    print(name)
+                    nameController.generate(name: name)
+                }
+            }
+            
+            Section {
+                ForEach(nameController.results, id: \.self) { domain in
+                    Text(domain)
                 }
             }
         }
