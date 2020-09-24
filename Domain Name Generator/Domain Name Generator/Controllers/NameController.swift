@@ -21,7 +21,15 @@ class NameController: ObservableObject {
     }
     
     func generate(name: String) {
-        results = perfectMatches(name: name)
+        var results: [String] = []
+        
+        var perfectName = name
+        while perfectName.count > 1 {
+            results.append(contentsOf: perfectMatches(name: perfectName))
+            perfectName = String(perfectName.dropLast())
+        }
+        
+        self.results = results
     }
     
     private func perfectMatches(name: String) -> [String] {
