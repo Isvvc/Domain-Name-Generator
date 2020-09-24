@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5936183B251D365000D00696 /* Domain_Name_GeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5936183A251D365000D00696 /* Domain_Name_GeneratorApp.swift */; };
+		5936183D251D365000D00696 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5936183C251D365000D00696 /* ContentView.swift */; };
+		5936183F251D365200D00696 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5936183E251D365200D00696 /* Assets.xcassets */; };
+		59361842251D365200D00696 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59361841251D365200D00696 /* Preview Assets.xcassets */; };
+		5936184D251D365200D00696 /* Domain_Name_GeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5936184C251D365200D00696 /* Domain_Name_GeneratorTests.swift */; };
+		59361858251D365200D00696 /* Domain_Name_GeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59361857251D365200D00696 /* Domain_Name_GeneratorUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		59361849251D365200D00696 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5936182F251D365000D00696 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59361836251D365000D00696;
+			remoteInfo = "Domain Name Generator";
+		};
+		59361854251D365200D00696 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5936182F251D365000D00696 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59361836251D365000D00696;
+			remoteInfo = "Domain Name Generator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		59361837251D365000D00696 /* Domain Name Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Domain Name Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5936183A251D365000D00696 /* Domain_Name_GeneratorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain_Name_GeneratorApp.swift; sourceTree = "<group>"; };
+		5936183C251D365000D00696 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5936183E251D365200D00696 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59361841251D365200D00696 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		59361843251D365200D00696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59361848251D365200D00696 /* Domain Name GeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Domain Name GeneratorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5936184C251D365200D00696 /* Domain_Name_GeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain_Name_GeneratorTests.swift; sourceTree = "<group>"; };
+		5936184E251D365200D00696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59361853251D365200D00696 /* Domain Name GeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Domain Name GeneratorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59361857251D365200D00696 /* Domain_Name_GeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain_Name_GeneratorUITests.swift; sourceTree = "<group>"; };
+		59361859251D365200D00696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59361834251D365000D00696 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59361845251D365200D00696 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59361850251D365200D00696 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5936182E251D365000D00696 = {
+			isa = PBXGroup;
+			children = (
+				59361839251D365000D00696 /* Domain Name Generator */,
+				5936184B251D365200D00696 /* Domain Name GeneratorTests */,
+				59361856251D365200D00696 /* Domain Name GeneratorUITests */,
+				59361838251D365000D00696 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		59361838251D365000D00696 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59361837251D365000D00696 /* Domain Name Generator.app */,
+				59361848251D365200D00696 /* Domain Name GeneratorTests.xctest */,
+				59361853251D365200D00696 /* Domain Name GeneratorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59361839251D365000D00696 /* Domain Name Generator */ = {
+			isa = PBXGroup;
+			children = (
+				5936183A251D365000D00696 /* Domain_Name_GeneratorApp.swift */,
+				5936183C251D365000D00696 /* ContentView.swift */,
+				5936183E251D365200D00696 /* Assets.xcassets */,
+				59361843251D365200D00696 /* Info.plist */,
+				59361840251D365200D00696 /* Preview Content */,
+			);
+			path = "Domain Name Generator";
+			sourceTree = "<group>";
+		};
+		59361840251D365200D00696 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				59361841251D365200D00696 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5936184B251D365200D00696 /* Domain Name GeneratorTests */ = {
+			isa = PBXGroup;
+			children = (
+				5936184C251D365200D00696 /* Domain_Name_GeneratorTests.swift */,
+				5936184E251D365200D00696 /* Info.plist */,
+			);
+			path = "Domain Name GeneratorTests";
+			sourceTree = "<group>";
+		};
+		59361856251D365200D00696 /* Domain Name GeneratorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				59361857251D365200D00696 /* Domain_Name_GeneratorUITests.swift */,
+				59361859251D365200D00696 /* Info.plist */,
+			);
+			path = "Domain Name GeneratorUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59361836251D365000D00696 /* Domain Name Generator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5936185C251D365200D00696 /* Build configuration list for PBXNativeTarget "Domain Name Generator" */;
+			buildPhases = (
+				59361833251D365000D00696 /* Sources */,
+				59361834251D365000D00696 /* Frameworks */,
+				59361835251D365000D00696 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Domain Name Generator";
+			productName = "Domain Name Generator";
+			productReference = 59361837251D365000D00696 /* Domain Name Generator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		59361847251D365200D00696 /* Domain Name GeneratorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5936185F251D365200D00696 /* Build configuration list for PBXNativeTarget "Domain Name GeneratorTests" */;
+			buildPhases = (
+				59361844251D365200D00696 /* Sources */,
+				59361845251D365200D00696 /* Frameworks */,
+				59361846251D365200D00696 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5936184A251D365200D00696 /* PBXTargetDependency */,
+			);
+			name = "Domain Name GeneratorTests";
+			productName = "Domain Name GeneratorTests";
+			productReference = 59361848251D365200D00696 /* Domain Name GeneratorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		59361852251D365200D00696 /* Domain Name GeneratorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59361862251D365200D00696 /* Build configuration list for PBXNativeTarget "Domain Name GeneratorUITests" */;
+			buildPhases = (
+				5936184F251D365200D00696 /* Sources */,
+				59361850251D365200D00696 /* Frameworks */,
+				59361851251D365200D00696 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59361855251D365200D00696 /* PBXTargetDependency */,
+			);
+			name = "Domain Name GeneratorUITests";
+			productName = "Domain Name GeneratorUITests";
+			productReference = 59361853251D365200D00696 /* Domain Name GeneratorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5936182F251D365000D00696 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					59361836251D365000D00696 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					59361847251D365200D00696 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 59361836251D365000D00696;
+					};
+					59361852251D365200D00696 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 59361836251D365000D00696;
+					};
+				};
+			};
+			buildConfigurationList = 59361832251D365000D00696 /* Build configuration list for PBXProject "Domain Name Generator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5936182E251D365000D00696;
+			productRefGroup = 59361838251D365000D00696 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59361836251D365000D00696 /* Domain Name Generator */,
+				59361847251D365200D00696 /* Domain Name GeneratorTests */,
+				59361852251D365200D00696 /* Domain Name GeneratorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59361835251D365000D00696 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59361842251D365200D00696 /* Preview Assets.xcassets in Resources */,
+				5936183F251D365200D00696 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59361846251D365200D00696 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59361851251D365200D00696 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59361833251D365000D00696 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5936183D251D365000D00696 /* ContentView.swift in Sources */,
+				5936183B251D365000D00696 /* Domain_Name_GeneratorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59361844251D365200D00696 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5936184D251D365200D00696 /* Domain_Name_GeneratorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5936184F251D365200D00696 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59361858251D365200D00696 /* Domain_Name_GeneratorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5936184A251D365200D00696 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59361836251D365000D00696 /* Domain Name Generator */;
+			targetProxy = 59361849251D365200D00696 /* PBXContainerItemProxy */;
+		};
+		59361855251D365200D00696 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59361836251D365000D00696 /* Domain Name Generator */;
+			targetProxy = 59361854251D365200D00696 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5936185A251D365200D00696 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5936185B251D365200D00696 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5936185D251D365200D00696 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Domain Name Generator/Preview Content\"";
+				DEVELOPMENT_TEAM = A4525544Q4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Domain Name Generator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vc.isv.Domain-Name-Generator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5936185E251D365200D00696 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Domain Name Generator/Preview Content\"";
+				DEVELOPMENT_TEAM = A4525544Q4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Domain Name Generator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vc.isv.Domain-Name-Generator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		59361860251D365200D00696 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A4525544Q4;
+				INFOPLIST_FILE = "Domain Name GeneratorTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vc.isv.Domain-Name-GeneratorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Domain Name Generator.app/Domain Name Generator";
+			};
+			name = Debug;
+		};
+		59361861251D365200D00696 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A4525544Q4;
+				INFOPLIST_FILE = "Domain Name GeneratorTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vc.isv.Domain-Name-GeneratorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Domain Name Generator.app/Domain Name Generator";
+			};
+			name = Release;
+		};
+		59361863251D365200D00696 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A4525544Q4;
+				INFOPLIST_FILE = "Domain Name GeneratorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vc.isv.Domain-Name-GeneratorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Domain Name Generator";
+			};
+			name = Debug;
+		};
+		59361864251D365200D00696 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A4525544Q4;
+				INFOPLIST_FILE = "Domain Name GeneratorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vc.isv.Domain-Name-GeneratorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Domain Name Generator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59361832251D365000D00696 /* Build configuration list for PBXProject "Domain Name Generator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5936185A251D365200D00696 /* Debug */,
+				5936185B251D365200D00696 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5936185C251D365200D00696 /* Build configuration list for PBXNativeTarget "Domain Name Generator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5936185D251D365200D00696 /* Debug */,
+				5936185E251D365200D00696 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5936185F251D365200D00696 /* Build configuration list for PBXNativeTarget "Domain Name GeneratorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59361860251D365200D00696 /* Debug */,
+				59361861251D365200D00696 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59361862251D365200D00696 /* Build configuration list for PBXNativeTarget "Domain Name GeneratorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59361863251D365200D00696 /* Debug */,
+				59361864251D365200D00696 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5936182F251D365000D00696 /* Project object */;
+}
