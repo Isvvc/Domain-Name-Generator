@@ -13,6 +13,8 @@
 		59361842251D365200D00696 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59361841251D365200D00696 /* Preview Assets.xcassets */; };
 		5936184D251D365200D00696 /* Domain_Name_GeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5936184C251D365200D00696 /* Domain_Name_GeneratorTests.swift */; };
 		59361858251D365200D00696 /* Domain_Name_GeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59361857251D365200D00696 /* Domain_Name_GeneratorUITests.swift */; };
+		5936186B251D36AA00D00696 /* NameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5936186A251D36AA00D00696 /* NameController.swift */; };
+		59361876251D36F200D00696 /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59361875251D36F200D00696 /* NameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		59361853251D365200D00696 /* Domain Name GeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Domain Name GeneratorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59361857251D365200D00696 /* Domain_Name_GeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain_Name_GeneratorUITests.swift; sourceTree = "<group>"; };
 		59361859251D365200D00696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5936186A251D36AA00D00696 /* NameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameController.swift; sourceTree = "<group>"; };
+		59361875251D36F200D00696 /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				5936183A251D365000D00696 /* Domain_Name_GeneratorApp.swift */,
-				5936183C251D365000D00696 /* ContentView.swift */,
+				59361868251D368800D00696 /* Views */,
+				59361869251D369500D00696 /* Controllers */,
 				5936183E251D365200D00696 /* Assets.xcassets */,
 				59361843251D365200D00696 /* Info.plist */,
 				59361840251D365200D00696 /* Preview Content */,
@@ -128,6 +133,23 @@
 				59361859251D365200D00696 /* Info.plist */,
 			);
 			path = "Domain Name GeneratorUITests";
+			sourceTree = "<group>";
+		};
+		59361868251D368800D00696 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5936183C251D365000D00696 /* ContentView.swift */,
+				59361875251D36F200D00696 /* NameView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		59361869251D369500D00696 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5936186A251D36AA00D00696 /* NameController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +282,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5936183D251D365000D00696 /* ContentView.swift in Sources */,
+				59361876251D36F200D00696 /* NameView.swift in Sources */,
 				5936183B251D365000D00696 /* Domain_Name_GeneratorApp.swift in Sources */,
+				5936186B251D36AA00D00696 /* NameController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
