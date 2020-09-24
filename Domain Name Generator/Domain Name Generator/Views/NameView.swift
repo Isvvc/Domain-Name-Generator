@@ -21,6 +21,10 @@ struct NameView: View {
             }
             
             Section {
+                NavigationLink("Settings", destination: SettingsView())
+            }
+            
+            Section {
                 Button("Generate") {
                     nameController.generate(name: name)
                 }

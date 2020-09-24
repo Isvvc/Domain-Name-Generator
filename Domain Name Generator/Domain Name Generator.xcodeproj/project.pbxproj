@@ -16,6 +16,8 @@
 		5936186B251D36AA00D00696 /* NameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5936186A251D36AA00D00696 /* NameController.swift */; };
 		59361876251D36F200D00696 /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59361875251D36F200D00696 /* NameView.swift */; };
 		5936187C251D398600D00696 /* TLDs.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5936187B251D398600D00696 /* TLDs.txt */; };
+		59361881251D5ACF00D00696 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59361880251D5ACF00D00696 /* SettingsView.swift */; };
+		5936188A251D5E6800D00696 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59361889251D5E6800D00696 /* Key.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		5936186A251D36AA00D00696 /* NameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameController.swift; sourceTree = "<group>"; };
 		59361875251D36F200D00696 /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
 		5936187B251D398600D00696 /* TLDs.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = TLDs.txt; sourceTree = "<group>"; };
+		59361880251D5ACF00D00696 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		59361889251D5E6800D00696 /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				5936183A251D365000D00696 /* Domain_Name_GeneratorApp.swift */,
+				59361888251D5E5700D00696 /* Model */,
 				59361868251D368800D00696 /* Views */,
 				59361869251D369500D00696 /* Controllers */,
 				5936187A251D396700D00696 /* Resources */,
@@ -142,6 +147,7 @@
 			children = (
 				5936183C251D365000D00696 /* ContentView.swift */,
 				59361875251D36F200D00696 /* NameView.swift */,
+				59361880251D5ACF00D00696 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -161,6 +167,14 @@
 				5936187B251D398600D00696 /* TLDs.txt */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		59361888251D5E5700D00696 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				59361889251D5E6800D00696 /* Key.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,9 +308,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5936183D251D365000D00696 /* ContentView.swift in Sources */,
+				59361881251D5ACF00D00696 /* SettingsView.swift in Sources */,
 				59361876251D36F200D00696 /* NameView.swift in Sources */,
 				5936183B251D365000D00696 /* Domain_Name_GeneratorApp.swift in Sources */,
 				5936186B251D36AA00D00696 /* NameController.swift in Sources */,
+				5936188A251D5E6800D00696 /* Key.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

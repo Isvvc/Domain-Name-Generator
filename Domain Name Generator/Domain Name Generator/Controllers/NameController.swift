@@ -33,6 +33,10 @@ class NameController: ObservableObject {
             perfectName = String(perfectName.dropLast())
         }
         
+        if UserDefaults.standard.bool(forKey: Key.vowelSwap) {
+            results.append(contentsOf: vowelSwap(name: simpleName))
+        }
+        
         self.results = results
         self.simpleName = simpleName
     }
@@ -45,6 +49,31 @@ class NameController: ObservableObject {
             if name.suffix(length) == tld {
                 var domain = name
                 domain.insert(".", at: domain.index(domain.endIndex, offsetBy: -1 * length))
+                matches.append(domain)
+            }
+        }
+        
+        return matches
+    }
+    
+    private func wildcard(_ string: String) -> String {
+        string.replacingOccurrences(of: "a", with: "*")
+            .replacingOccurrences(of: "e", with: "*")
+            .replacingOccurrences(of: "i", with: "*")
+            .replacingOccurrences(of: "o", with: "*")
+            .replacingOccurrences(of: "u", with: "*")
+            .replacingOccurrences(of: "y", with: "*")
+    }
+    
+    private func vowelSwap(name: String) -> [String] {
+        var matches: [String] = []
+        let wildcardedName = wildcard(name)
+        
+        for tld in tlds {
+            let length = tld.count
+            if wildcardedName.suffix(length) == wildcard(tld) {
+                var domain = String(name.prefix(upTo: name.index(name.endIndex, offsetBy: -1 * length)))
+                domain.append(".\(tld)")
                 matches.append(domain)
             }
         }
