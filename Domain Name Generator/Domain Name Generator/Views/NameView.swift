@@ -26,7 +26,7 @@ struct NameView: View {
                 }
             }
             
-            Section {
+            Section(header: Text(nameController.simpleName)) {
                 ForEach(nameController.results, id: \.self) { domain in
                     Text(domain)
                 }

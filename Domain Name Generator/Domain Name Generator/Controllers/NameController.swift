@@ -10,6 +10,7 @@ import Foundation
 class NameController: ObservableObject {
     
     @Published var results: [String] = []
+    @Published var simpleName: String = ""
     
     var tlds: [String]
     
@@ -23,13 +24,17 @@ class NameController: ObservableObject {
     func generate(name: String) {
         var results: [String] = []
         
-        var perfectName = name
+        var simpleName = name.lowercased()
+        simpleName = simpleName.filter { CharacterSet(charactersIn: String($0)).isSubset(of: CharacterSet.lowercaseLetters) }
+        
+        var perfectName = simpleName
         while perfectName.count > 1 {
             results.append(contentsOf: perfectMatches(name: perfectName))
             perfectName = String(perfectName.dropLast())
         }
         
         self.results = results
+        self.simpleName = simpleName
     }
     
     private func perfectMatches(name: String) -> [String] {
