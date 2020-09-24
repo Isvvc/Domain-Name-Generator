@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NameView: View {
     
-    @StateObject private var nameController = NameController()
+    @EnvironmentObject var nameController: NameController
     
     @State private var name: String = ""
     

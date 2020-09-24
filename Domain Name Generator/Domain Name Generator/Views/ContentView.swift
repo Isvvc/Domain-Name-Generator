@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject private var nameController = NameController()
+    
     var body: some View {
         NavigationView {
             NameView()
         }
+        .environmentObject(nameController)
     }
 }
 
