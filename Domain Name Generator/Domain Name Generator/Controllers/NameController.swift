@@ -21,6 +21,8 @@ class NameController: ObservableObject {
         self.tlds = tlds.dropFirst().dropLast()
     }
     
+    //MARK: Generation
+    
     func generate(name: String) {
         var results: [String] = []
         
@@ -34,7 +36,11 @@ class NameController: ObservableObject {
         }
         
         if UserDefaults.standard.bool(forKey: Key.vowelSwap) {
-            results.append(contentsOf: vowelSwap(name: simpleName))
+            appendNewContents(of: vowelSwap(name: simpleName, combo: false), to: &results)
+            
+            if UserDefaults.standard.bool(forKey: Key.vowelCombo) {
+                appendNewContents(of: vowelSwap(name: simpleName, combo: true), to: &results)
+            }
         }
         
         self.results = results
@@ -46,7 +52,8 @@ class NameController: ObservableObject {
         
         for tld in tlds {
             let length = tld.count
-            if name.suffix(length) == tld {
+            if name.suffix(length) == tld,
+               length < name.count {
                 var domain = name
                 domain.insert(".", at: domain.index(domain.endIndex, offsetBy: -1 * length))
                 matches.append(domain)
@@ -56,22 +63,15 @@ class NameController: ObservableObject {
         return matches
     }
     
-    private func wildcard(_ string: String) -> String {
-        string.replacingOccurrences(of: "a", with: "*")
-            .replacingOccurrences(of: "e", with: "*")
-            .replacingOccurrences(of: "i", with: "*")
-            .replacingOccurrences(of: "o", with: "*")
-            .replacingOccurrences(of: "u", with: "*")
-            .replacingOccurrences(of: "y", with: "*")
-    }
-    
-    private func vowelSwap(name: String) -> [String] {
+    private func vowelSwap(name: String, combo: Bool) -> [String] {
         var matches: [String] = []
-        let wildcardedName = wildcard(name)
+        let wildcardedName = wildcard(name, combo: combo)
         
         for tld in tlds {
-            let length = tld.count
-            if wildcardedName.suffix(length) == wildcard(tld) {
+            let wildcardedTLD = wildcard(tld, combo: combo)
+            let length = wildcardedTLD.count
+            if wildcardedName.count > length,
+               wildcardedName.suffix(length) == wildcardedTLD {
                 var domain = String(name.prefix(upTo: name.index(name.endIndex, offsetBy: -1 * length)))
                 domain.append(".\(tld)")
                 matches.append(domain)
@@ -79,6 +79,39 @@ class NameController: ObservableObject {
         }
         
         return matches
+    }
+    
+    //MARK: Helper
+    
+    private func wildcard(_ string: String, combo: Bool = false) -> String {
+        var result = string.replacingOccurrences(of: "a", with: "*")
+            .replacingOccurrences(of: "e", with: "*")
+            .replacingOccurrences(of: "i", with: "*")
+            .replacingOccurrences(of: "o", with: "*")
+            .replacingOccurrences(of: "u", with: "*")
+            .replacingOccurrences(of: "y", with: "*")
+        
+        if combo {
+            var previous = result[result.startIndex]
+            var index = result.index(after: result.startIndex)
+            while index < result.endIndex {
+                if previous == "*",
+                   result[index] == "*" {
+                    result.remove(at: index)
+                } else {
+                    previous = result[index]
+                    index = result.index(after: index)
+                }
+            }
+        }
+        
+        return result
+    }
+    
+    private func appendNewContents<T: Comparable>(of newElements: [T], to results: inout [T]) {
+        for newElement in newElements where !results.contains(newElement) {
+            results.append(newElement)
+        }
     }
     
 }

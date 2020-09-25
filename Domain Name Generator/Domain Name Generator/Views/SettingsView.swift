@@ -14,12 +14,15 @@ struct SettingsView: View {
     
     var body: some View {
         Form {
-            Section {
+            Section(footer: Text("Alexina generates both alexi.na and alexi.ne")) {
                 Toggle("Swap vowels in TLD", isOn: $vowelSwap)
             }
             
-            Section {
-                Toggle("Combine vowels in TLD", isOn: $vowelCombo)
+            if vowelSwap {
+                Section(footer: Text("Alexina generates both alexi.na and alexin.ai" + "\n" +
+                                        "Alexandrea generates both alexandr.ea and alexand.re")) {
+                    Toggle("Combine vowels in TLD", isOn: $vowelCombo)
+                }
             }
         }
         .navigationTitle("Settings")
